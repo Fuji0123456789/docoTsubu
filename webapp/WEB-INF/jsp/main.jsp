@@ -1,4 +1,4 @@
-<%-- リスト10-9の状態 --%>
+<%-- リスト10-11の状態 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="model.User" %>
 <%
@@ -15,6 +15,7 @@ User loginUser = (User) session.getAttribute("loginUser");
 <h1>どこつぶメイン</h1>
 <p>
 <%= loginUser.getName() %>さん、ログイン中
+<a href="/docoTsubu/Logout">ログアウト</a>
 </p>
 </body>
 </html>
